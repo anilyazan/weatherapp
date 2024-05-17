@@ -10,7 +10,7 @@ const weatherData = useSelector((state)=> state.weather.weatherData);
 const error = useSelector((state)=> state.weather.error);
 
 useEffect (()=> {
-  dispatch(fetchWeather(40.7128, -74.0060));
+  dispatch(fetchWeather());
 },[dispatch] );
 
   return (
